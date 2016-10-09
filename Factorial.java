@@ -1,9 +1,15 @@
 import java.util.Scanner;
-
+/**
+* Factorial program
+* @author Mitchell Pavlak
+* @author Orndorff AP Comp Sci Class
+**/
 public class Factorial
 {
-	
-	
+/** 
+* Main method that calls the factorial method
+*@param args Standard array of commandline String arguments. Not used in this program.
+**/
 	public static void main(String[] args)
 	{
 	Scanner s = new Scanner(System.in);
@@ -46,13 +52,17 @@ public class Factorial
 		// only way you can get to this portion of the loop would be if a double is entered
 		// that breaks the previous, if it is a bye equiv answer it will end the whole
 		// loop... 
-		if (answer != 0 && !(response.equals("bye"))
+		if (answer != 0 && !(response.equals("bye")))
 		{
 			System.out.println(answer +"! = " + factorial(answer));
 		}
 	}
 	}
-
+	/**
+	*This method takes a number and finds that number factorial recursively
+	*@param number the double it takes in (double for greater precision and larger inputs)
+	*@return the number factorial as a double 
+	**/
 	public static double factorial(double number) 	
 	{
 		if (number == 0)
